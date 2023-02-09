@@ -30,6 +30,8 @@ public class OrderService {
 
         order.setOrderLineItemsList(orderLineItems);
 
+        //call inventory service and check if product is in stock
+
         orderRepository.save(order);
     }
 
